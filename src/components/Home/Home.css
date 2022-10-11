@@ -10,9 +10,72 @@
     height: 50%;
     height: auto;
     position: absolute;
-    transform: translate(30rem ,-30rem);
-  
+    transform: translate(30rem ,-25rem);
+    
 }
 .bg1 img{
     width: 100%;
+}
+
+.home-ho{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    transform: translateY(8rem);
+}
+.home-content{
+    gap: 2rem;
+    justify-self: center;
+}
+.home-headings{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.home-headings h1{
+    font-size: 3.5rem;
+}
+.home-headings h1 span{
+    font-size: 6rem;
+}
+.home-bg img{
+    width: 100%;
+}
+.home-btns{
+    display: flex;
+    gap: 2rem;
+}
+.home-btns .portf{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    color: #B28AF8;
+}
+.portf:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.home-btns .play{
+    background-color: transparent;
+    border: none;  
+    cursor: pointer;
+}
+.bg-illus{
+    position: relative;
+}
+.bg-illus .illus1{
+    transform: translate(30rem , 38rem);
+}
+.bg-illus .illus2{
+    transform: translate(35rem, 6rem);
+    z-index: 1;
+    position: relative;
+}
+.bg-illus .illus3{
+    transform: translate(-9rem , 13rem );
 }

@@ -9,8 +9,8 @@ nav{
 }
 .navbar{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    column-gap: 2rem;
+    grid-template-columns: 120px 3fr 1fr;
+    column-gap: 3rem;
     margin-top: 2.5rem;
 }
 .nav-menu{
@@ -23,6 +23,7 @@ nav{
 }
 .logo{
  justify-self: end;
+ 
 }
 .menu-btn{
     display: none;
