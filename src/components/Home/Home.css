@@ -70,6 +70,7 @@
 }
 .bg-illus .illus1{
     transform: translate(30rem , 38rem);
+    transition: .3s;
 }
 .bg-illus .illus2{
     transform: translate(35rem, 6rem);
@@ -78,4 +79,27 @@
 }
 .bg-illus .illus3{
     transform: translate(-9rem , 13rem );
+}
+
+/* --------------------------- For Laptops --------------------------- */
+@media screen and (max-width:1024px) {
+    .home-content{
+        padding: 0rem 0rem 0rem 5rem;
+    }
+    .bg-illus .illus1{
+        transform: translate(25rem , 38rem);
+    }
+}
+
+/* --------------------------- For Tablets --------------------------- */
+@media  screen and (max-width:768px ) {
+    .home-ho{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        align-items: center;
+        transform: translateY(8rem);
+    } 
+
 }
