@@ -1,11 +1,19 @@
 import {Link, NavLink} from 'react-router-dom'
+import { useState } from 'react'
 import React from 'react'
 import './Navbar.css'
 import {links} from '../data'
 import logo from './images/Group 3.png'
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { RiMenu4Fill } from 'react-icons/ri';
 
 function Navbar() {
+
+  const [toggle, setToggle] = useState(false)
+   
+  
+
+
+
   return (
    <>
     <nav>
@@ -13,7 +21,7 @@ function Navbar() {
         <Link className='logo' to="/">
           <img  src={logo} alt="logo" />
         </Link>
-            <ul className='nav-menu'>
+            <ul className={`nav-menu ${toggle ? "show-nav" : "hide-nav"}`}>
               {
                 links.map(({name, path}, index)=>{
                   return(
@@ -26,10 +34,10 @@ function Navbar() {
             </ul>
             <button className='cont'>Contact Us</button>
         </div>
-        <button className='menu-btn'><GiHamburgerMenu/></button>
+        <button onClick={()=>{setToggle(!toggle)}} className='menu-btn'><RiMenu4Fill/></button>
     </nav>
    </>
   )
-}
 
+ }
 export default Navbar
