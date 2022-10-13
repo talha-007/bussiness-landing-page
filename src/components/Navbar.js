@@ -25,7 +25,7 @@ function Navbar() {
               {
                 links.map(({name, path}, index)=>{
                   return(
-                    <li>
+                    <li key={index}>
                       <NavLink to={path}>{name}</NavLink>
                     </li>
                   )

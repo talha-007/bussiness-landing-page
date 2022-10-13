@@ -69,14 +69,13 @@ nav{
         display: grid;
         position: absolute;
         transform: translate(0rem, 15rem);
-        background-color: rgba(255, 255, 255, 0.319);
+        background-color: rgba(255, 255, 255, 0.319) ;
+        backdrop-filter: blur(10px);
         width: 100%;
         padding: 2rem 0rem;
         text-align: center;
     }
     .cont{
-        justify-self: end;
-        margin: 0rem 3rem;
         display: none;
     }
     .menu-btn{
