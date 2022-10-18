@@ -1,58 +1,42 @@
 import React from 'react'
-import '../caraousel1/caraousel1.css'
-import namesilo from '../images/namesilo.png'
-// import { Swiper, SwiperSlide } from 'swiper/react';
+import {Carousel} from 'react-bootstrap';
+import sisters from '../images/sisters.png'
+// import {spons} from '../data'
 
-function caraousel1() {
-
-
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-      
+function Caraousel1() {
   return (
-    <>
-    <div class="swiper swiper_">
-    {/* <!-- Additional required wrapper --> */}
-    <div class="swiper-wrapper">
-      {/* <!-- Slides --> */}
-      <div class="swiper-slide">
-        <img src={namesilo} alt="" />
-      </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
-    {/* <!-- If we need pagination --> */}
-    <div class="swiper-pagination"></div>
+    <Carousel>
+
+        <Carousel.Item>
+          <img src={sisters} alt="sisiter" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={sisters} alt="sisiter" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={sisters} alt="sisiter" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img src={sisters} alt="sisiter" />
+        </Carousel.Item>
+
+        {/* {
+          spons.map(({imgLink},index)=>{
+        return(
+          <Carousel.Item>
+          <img
+          className="d-block w-100"
+          src={imgLink}
+          alt='img2'
+        />
+        </Carousel.Item>
+        )
+          })
+        }       */}
   
-    {/* <!-- If we need navigation buttons --> */}
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   
-    {/* <!-- If we need scrollbar --> */}
-    <div class="swiper-scrollbar"></div>
-  </div>
-  </>
+  </Carousel>
   )
 }
 
-export default caraousel1
+export default Caraousel1

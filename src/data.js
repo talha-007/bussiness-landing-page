@@ -23,4 +23,22 @@ export const links=[
         name: "Contact Us",
         path: "/contact"
     },
+];
+
+export const spons=[
+    {
+        imgLink : './images/namesilo.png'
+    },
+    {
+        imgLink : './images/Relote.png'
+    },
+    {
+        imgLink : './images/sisters.png'
+    },
+    {
+        imgLink : './images/Vbit.png'
+    },
+    {
+        imgLink : './images/ZERP.png'
+    },
 ]
